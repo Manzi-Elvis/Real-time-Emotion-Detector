@@ -57,7 +57,7 @@ export default function SettingsPanel({ settings, onSettingsChange }: SettingsPa
           />
 
           {/* Menu */}
-          <div className="absolute right-0 mt-2 w-72 bg-card border border-border/40 rounded-lg shadow-lg z-50 backdrop-blur-sm bg-background/95">
+          <div className="absolute right-0 mt-2 w-72 bg-card border border-border/40 rounded-lg shadow-lg z-50 backdrop-blur-sm">
             <div className="p-4 border-b border-border/40">
               <h3 className="font-semibold text-sm">Settings</h3>
             </div>
