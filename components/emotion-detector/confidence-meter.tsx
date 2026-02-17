@@ -44,7 +44,7 @@ export default function ConfidenceMeter({ emotionResult }: ConfidenceMeterProps)
               stroke="currentColor"
               strokeWidth="8"
               strokeDasharray={`${Math.PI * 100}`}
-              strokeDashoffset={`${Math.PI * 100 * (1 - emotionResult?.confidence || 0)}`}
+              strokeDashoffset={`${Math.PI * 100 * (1 - (emotionResult?.confidence ?? 0))}`}
               strokeLinecap="round"
               className="text-accent transition-all duration-500 ease-out"
               style={{
