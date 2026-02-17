@@ -137,7 +137,15 @@ export async function detectFaceAndExpressions(
 export function normalizeExpressions(expressions: Record<string, number>): EmotionProbabilities {
   const emotions: Emotion[] = ['neutral', 'happy', 'sad', 'angry', 'fearful', 'disgusted', 'surprised']
 
-  const normalized: EmotionProbabilities = {}
+  const normalized: EmotionProbabilities = {
+    happy: 0,
+    sad: 0,
+    neutral: 0,
+    angry: 0,
+    surprised: 0,
+    fearful: 0,
+    disgusted: 0
+  }
 
   for (const emotion of emotions) {
     const value = expressions[emotion] ?? 0
