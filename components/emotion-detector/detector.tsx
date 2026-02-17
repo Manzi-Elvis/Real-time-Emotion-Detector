@@ -32,7 +32,7 @@ interface DetectorState {
 export default function EmotionDetector() {
   // Refs for video and canvas elements
   const videoRef = useRef<HTMLVideoElement>(null)
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null!)
   const streamRef = useRef<MediaStream | null>(null)
   const animationFrameRef = useRef<number | null>(null)
   const predictionTimeoutRef = useRef<NodeJS.Timeout | null>(null)
